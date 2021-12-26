@@ -70,13 +70,13 @@ class HomePage extends StatelessWidget {
           const SizedBox(height: Dimens.size20),
           Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: Dimens.size40),
-                child: InkWell(
-                  onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => GalleryCategoryPage()));
-                  },
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => GalleryCategoryPage()));
+                },
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
                       Container(
@@ -169,104 +169,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: Dimens.size32),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: Dimens.size40),
-                child: InkWell(
-                  onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => GalleryCategoryPage()));
-                  },
-                  child: Row(
-                    children: [
-                      Container(
-                        height: Dimens.size60,
-                        width: Dimens.size60,
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(Dimens.size16),
-                        ),
-                        alignment: Alignment.center,
-                        child: Text(
-                          'N',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: Dimens.size20,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: Dimens.size16),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Nature',
-                            style: TextStyle(
-                              fontSize: Dimens.size16,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                '6 images added by Tyler',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w200,
-                                ),
-                              ),
-                              const SizedBox(width: Dimens.size8),
-                              CircleAvatar(
-                                radius: Dimens.size4,
-                                backgroundColor: Colors.black38,
-                              ),
-                              const SizedBox(width: Dimens.size8),
-                              Text(
-                                '2m ago',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w200,
-                                ),
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              const SizedBox(height: Dimens.size20),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Container(
-                  padding: const EdgeInsets.only(bottom: Dimens.size20),
-                  child: Row(
-                    children: [
-                      const SizedBox(width: Dimens.size40),
-                      ImageCard(),
-                      const SizedBox(width: Dimens.size20),
-                      ImageCard(),
-                      const SizedBox(width: Dimens.size20),
-                      ImageCard(),
-                      const SizedBox(width: Dimens.size20),
-                    ],
-                  ),
-                ),
-              ),
-              Row(
-                children: [
-                  const SizedBox(width: Dimens.size40),
-                  CircleAvatar(
-                    radius: Dimens.size8,
-                    backgroundColor: Colors.redAccent,
-                  ),
-                  const SizedBox(width: Dimens.size8),
-                  Text(
-                    '6 new comments',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w300,
-                    ),
-                  ),
-                ],
-              ),
+
             ],
           ),
           const SizedBox(height: Dimens.size160,)

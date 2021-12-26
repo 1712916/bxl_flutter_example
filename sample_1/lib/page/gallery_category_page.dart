@@ -139,7 +139,7 @@ class GalleryCategoryPage extends StatelessWidget {
                               physics: NeverScrollableScrollPhysics(),
                               crossAxisSpacing: Dimens.size16,
                               mainAxisSpacing: Dimens.size16,
-                              childAspectRatio: 3/5,
+                              childAspectRatio: 3/6,
                               children: images
                                   .map((image) => Container(
                                          child: Column(
@@ -168,7 +168,7 @@ class GalleryCategoryPage extends StatelessWidget {
                                                       BorderRadius.circular(
                                                           Dimens.size20),
                                                 ),
-                                                child: Text(image.imageName)),
+                                                child: Text(image.imageName, textAlign: TextAlign.center, overflow: TextOverflow.ellipsis, maxLines: 2,)),
                                           ],
                                         ),
                                       ))
