@@ -25,24 +25,46 @@ class HomePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16),
             child: DissmissCard(
-              height: 100,
-              child: ClipRRect(
+              removeMode: false,
+               child: ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(16)),
-                child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Title',
-                        style: Theme.of(context).textTheme.headline5,
-                      ),
-                      Text(
-                        'Lorem ipsum dolor sit amet',
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
-                    ],
+                child: GestureDetector(
+                  onTap: () {
+                    print('LOL');
+                  },
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          'Title',
+                          style: Theme.of(context).textTheme.headline5,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -58,6 +80,180 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: DissmissCard(
+                child: ClipRRect(
+                borderRadius: BorderRadius.all(Radius.circular(16)),
+                child: GestureDetector(
+                  onTap: () {
+                    print('LOL');
+                  },
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          'Title',
+                          style: Theme.of(context).textTheme.headline5,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              actions: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 8, right: 16),
+                  child: Icon(Icons.eighteen_mp),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 16, right: 16),
+                  child: Icon(Icons.eighteen_mp),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: DissmissCard(
+              removeMode: true,
+               child: ClipRRect(
+                borderRadius: BorderRadius.all(Radius.circular(16)),
+                child: GestureDetector(
+                  onTap: () {
+                    print('LOL');
+                  },
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          'Title',
+                          style: Theme.of(context).textTheme.headline5,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              actions: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 8, right: 16),
+                  child: Icon(Icons.eighteen_mp),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 16, right: 16),
+                  child: Icon(Icons.eighteen_mp),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: DissmissCard(
+              removeMode: true,
+               child: ClipRRect(
+                borderRadius: BorderRadius.all(Radius.circular(16)),
+                child: GestureDetector(
+                  onTap: () {
+                    print('LOL');
+                  },
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          'Title',
+                          style: Theme.of(context).textTheme.headline5,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              actions: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 8, right: 16),
+                  child: Icon(Icons.eighteen_mp),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 16, right: 16),
+                  child: Icon(Icons.eighteen_mp),
+                ),
+              ],
+            ),
+          ),
+
         ],
       ),
     );
