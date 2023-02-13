@@ -9,12 +9,12 @@ class DissmissCard extends StatefulWidget {
   final bool removeMode;
 
   const DissmissCard({
-    Key key,
+    Key? key,
     this.color = Colors.white,
-    this.height,
+    required this.height,
     this.borderRadius = const BorderRadius.all(Radius.circular(16)),
-    this.child,
-    this.actions,
+    required this.child,
+    required this.actions,
     this.removeMode = false,
   }) : super(key: key);
 
@@ -47,7 +47,7 @@ class _DissmissCardState extends State<DissmissCard> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      _actionsWidth = _actionsKey.currentContext.size.width;
+      _actionsWidth = _actionsKey.currentContext?.size?.width ?? 0;
     });
   }
 
@@ -114,13 +114,9 @@ class _DissmissCardState extends State<DissmissCard> {
         _alignment = _rightAlignment;
       } else {}
       _isHideAction = false;
-    } else if (_left > _actionsWidth / 2 &&
-        !_isHideAction &&
-        _alignment == _rightAlignment) {
+    } else if (_left > _actionsWidth / 2 && !_isHideAction && _alignment == _rightAlignment) {
       _alignment = _leftAlignment;
-    } else if (_left < -_actionsWidth / 2 &&
-        !_isHideAction &&
-        _alignment == _leftAlignment) {
+    } else if (_left < -_actionsWidth / 2 && !_isHideAction && _alignment == _leftAlignment) {
       _alignment = _rightAlignment;
     }
     setState(() {});
