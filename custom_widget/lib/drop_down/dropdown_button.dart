@@ -125,7 +125,6 @@ class _CustomDropdownButtonState<T> extends State<CustomDropdownButton<T>> {
     _currentIndexNotifier.value = index;
     _openNotifier.value = false;
     widget.onChange?.call(index);
-    setState(() {});
   }
 
   @override
@@ -194,7 +193,10 @@ class _DropDownOverlayViewState extends State<DropDownOverlayView> with TickerPr
       _animationController.forward();
     } else {
       _animationController.reverse().then((value) {
-        _overlayEntry?.remove();
+        if (_overlayEntry?.mounted ?? false) {
+          _overlayEntry?.remove();
+        }
+        _overlayEntry = null;
       });
     }
     widget.onToggle?.call(_openNotifier.value);
@@ -213,7 +215,12 @@ class _DropDownOverlayViewState extends State<DropDownOverlayView> with TickerPr
   }
 
   void _toggle() {
-    _openNotifier.value = !_openNotifier.value;
+      if (mounted) {
+      if (_animationController.isAnimating) {
+        return;
+      }
+      _openNotifier.value = !_openNotifier.value;
+    }
   }
 
   @override
